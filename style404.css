@@ -29,7 +29,7 @@ body {
 }
 
 body.darktheme {
-    background-color: #0f0f0f;
+    background-color: #000000;
     color: white;
 }
 
@@ -49,7 +49,7 @@ body.darktheme {
 }
 
 body.darktheme .header {
-    background-color: #0f0f0ff0;
+    background-color: #000000f0;
 }
 
 .themes {
