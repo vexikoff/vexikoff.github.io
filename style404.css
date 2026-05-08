@@ -62,6 +62,19 @@ body.darktheme {
 }
 
 
+body {
+    --sizehd: 24px;
+}
+
+body.mb {
+    --sizehd: 20px;
+}
+
+body.mb .hdtxt{
+    font-size: 20px;
+}
+
+
 body.darktheme .header {
     background-color: #000000;
 }
@@ -78,6 +91,8 @@ body.darktheme .header {
 .theme {
     cursor: pointer;
     transition: 0.2s cubic-bezier(.4,.13,.48,.79) fill;
+    height: var(--sizehd);
+    width: var(--sizehd);
 }
 
 body.darktheme .theme {
@@ -110,9 +125,17 @@ body.darktheme .theme {
     cursor: default;
 }
 
+body.mb .error {
+    font-size: 10px;
+}
+
 .errorx {
     margin-bottom: 0;
     transition: 0.2s cubic-bezier(.4,.13,.48,.79) color;
+}
+
+body.mb .errorx {
+    font-size: 16px;
 }
 
 .errorm {
@@ -122,6 +145,10 @@ body.darktheme .theme {
     margin-bottom: 0;
     cursor: default;
     transition: 0.2s cubic-bezier(.4,.13,.48,.79) color;
+}
+
+body.mb .errorm {
+    font-size: 10px;
 }
 
 .goto {
@@ -136,6 +163,12 @@ body.darktheme .theme {
     font-size: 19.5px;
     cursor: pointer;
     transition: 0.2s cubic-bezier(.4,.13,.48,.79) all;
+}
+
+body.mb .goto {
+    font-size: 14px;
+    width: 256px;
+    height: 29px;
 }
 
 body.darktheme .goto {
