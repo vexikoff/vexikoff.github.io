@@ -29,7 +29,7 @@ body {
 }
 
 body.darktheme {
-    background-color: #000000;
+    background-color: #0f0f0f;
     color: white;
 }
 
@@ -37,7 +37,6 @@ body.darktheme {
     font-family: SansBold, sans-serif;
     background-color: #f2f2f2f0;
     margin: 0;
-    backdrop-filter: blur(32px);
     top: 0;
     display: flex;
     width: 100%;
@@ -46,10 +45,25 @@ body.darktheme {
     align-items: center;
     flex-direction: row;
     transition: 0.2s cubic-bezier(.4,.13,.48,.79) all;
+    overflow: hidden;
 }
 
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: -100px;
+    z-index: -1;
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+    pointer-events: none;
+}
+
+
 body.darktheme .header {
-    background-color: #000000f0;
+    background-color: #0f0f0ff0;
 }
 
 .themes {
@@ -76,7 +90,7 @@ body.darktheme .theme {
     font-size: 24px;
 }
 
-.main {
+.mainю {
     margin: 0;
     padding: 0;
     width: 100%;
