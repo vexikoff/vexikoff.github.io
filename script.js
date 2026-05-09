@@ -1,4 +1,5 @@
 const body = document.body;
+const delmob = document.querySelector('.cc');
 
 if (localStorage.getItem('theme') === 'darktheme') {
   body.classList.add('darktheme');
@@ -30,6 +31,7 @@ function detectDevice() {
 
 if (detectDevice() === "mb") {
   body.classList.add('mb')
+  delmob.remove();
 } else {
   body.classList.remove('mb')
 }

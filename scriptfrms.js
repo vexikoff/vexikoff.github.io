@@ -1,4 +1,4 @@
-const cursor = document.querySelector('.custom-cursor');
+const cursor = document.querySelector('.cc');
 let mouseX = 0, mouseY = 0;
 let cursorX = 0, cursorY = 0;
 let currentScale = 1;
