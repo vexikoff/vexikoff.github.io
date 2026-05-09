@@ -1,0 +1,19 @@
+* {
+    cursor: none !important;
+}
+
+.custom-cursor {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    pointer-events: none;
+    z-index: 9999;
+    will-change: transform;
+    margin-left: -6px; 
+    margin-top: -6px;
+    mix-blend-mode: difference;
+    transition: 0.3s cubic-bezier(.04,.18,0,.98) transform;
+}

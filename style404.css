@@ -93,6 +93,7 @@ body.darktheme .header {
     transition: 0.2s cubic-bezier(.4,.13,.48,.79) fill;
     height: var(--sizehd);
     width: var(--sizehd);
+    --pointer: 1;
 }
 
 body.darktheme .theme {
@@ -163,6 +164,7 @@ body.mb .errorm {
     font-size: 19.5px;
     cursor: pointer;
     transition: 0.2s cubic-bezier(.4,.13,.48,.79) all;
+    --pointer: 1;
 }
 
 body.mb .goto {
@@ -207,6 +209,7 @@ body.darktheme .goto {
     width: 20px;
     margin: 0;
     cursor: pointer;
+    --pointer: 1;
 }
 
 .left {
