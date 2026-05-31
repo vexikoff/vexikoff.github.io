@@ -239,6 +239,9 @@ body.darktheme .goto {
     flex-direction: row;
     gap: 6px;
     align-items: center;
+    flex-wrap: wrap;
+    margin-left: 32px;
+    margin-right: 32px;
 }
 
 .vcomm span {
@@ -337,4 +340,24 @@ body.darktheme .spacer {
 
 body.darktheme .hspacer {
     background-color: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 626px) {
+    .hspacer {
+        width: 90%;
+    }
+}
+
+@media (max-width: 326px) {
+    .vxkss {
+        font-size: 16px;
+    }
+    .hspacer {
+        width: 70%;
+    }
+    .see {
+        width: 75%;
+        height: auto;
+        padding: 4px;
+    }
 }

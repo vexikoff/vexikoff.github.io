@@ -49,3 +49,21 @@ body.darktheme .vcommс {
 body.darktheme .psp {
     color: rgba(255, 255, 255, 0.4);
 }
+
+@media (max-width: 910px) {
+    .t2 img {
+        width: 92.5%;
+    }
+    .vcommс {
+        width: 90%;
+    }
+}
+
+@media (max-width: 610px) {
+    .t2 img {
+        display: none;
+    }
+    .vcommс {
+        width: 80%;
+    }
+}
