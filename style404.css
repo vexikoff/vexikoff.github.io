@@ -346,12 +346,12 @@ body.darktheme .hspacer {
     .hspacer {
         width: 90%;
     }
-}
-
-@media (max-width: 326px) {
     .vxkss {
         font-size: 16px;
     }
+}
+
+@media (max-width: 326px) {
     .hspacer {
         width: 70%;
     }
