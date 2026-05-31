@@ -13,6 +13,10 @@
     src: url(Font/TikTokSansExtraExpandedRegular.ttf);
 }
 
+h1 {
+    transition: 0.2s cubic-bezier(.4,.13,.48,.79) background-color, 0.2s cubic-bezier(.4,.13,.48,.79) color;
+}
+
 body, html {
     margin: 0;
     color: rgb(0, 0, 0);
@@ -35,7 +39,7 @@ body.darktheme {
 
 .header {
     font-family: SansBold, sans-serif;
-    background-color: #f2f2f2f0;
+    background-color: #f2f2f2c0;
     margin: 0;
     top: 0;
     display: flex;
@@ -56,8 +60,8 @@ body.darktheme {
     right: 0;
     bottom: -100px;
     z-index: -1;
-    backdrop-filter: blur(32px);
-    -webkit-backdrop-filter: blur(32px);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
     pointer-events: none;
 }
 
@@ -110,7 +114,7 @@ body.darktheme .theme {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 80%;
+    height: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -228,4 +232,109 @@ body.darktheme .goto {
     font-size: 12px;
     margin: 0;
     cursor: default;
+}
+
+.vcomm {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+}
+
+.vcomm span {
+    background-color: black;
+    color: white;
+    padding: 2px 6px;
+    transition: 0.2s cubic-bezier(.4,.13,.48,.79) background-color, 0.2s cubic-bezier(.4,.13,.48,.79) color;
+    border-radius: 6px;
+    margin-top: 0px;
+}
+
+.vxkss {
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+body.darktheme .vcomm span {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.t1 {
+    display: flex;
+    flex-direction: column;
+    font-family: SansMed, sans-serif;
+    font-size: 12.5px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.t2 {
+    display: flex;
+    flex-direction: column;
+    font-family: SansMed, sans-serif;
+    font-size: 12.5px;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+}
+
+.t3 {
+    display: flex;
+    flex-direction: column;
+    font-family: SansMed, sans-serif;
+    font-size: 12.5px;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+}
+
+.see {
+    background-color: black;
+    color: white;
+    width: 256px;
+    height: 30px;
+    margin-top: 16px;
+    border: none;
+    border-radius: 10px;
+    font-family: SansMed, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s cubic-bezier(.4,.13,.48,.79) all;
+    --pointer: 1;
+}
+
+body.darktheme .see {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.see:hover {
+    transform: scale(1.05) rotateX(24deg) scaleY(1.1);
+}
+
+.spacer {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 1px;
+    height: 16px;
+    transition: 0.2s cubic-bezier(.4,.13,.48,.79) background-color, 0.2s cubic-bezier(.4,.13,.48,.79) color;
+}
+
+body.darktheme .spacer {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hspacer {
+    width: 512px;
+    height: 1px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 0.2s cubic-bezier(.4,.13,.48,.79) background-color, 0.2s cubic-bezier(.4,.13,.48,.79) color;
+}
+
+body.darktheme .hspacer {
+    background-color: rgba(255, 255, 255, 0.4);
 }

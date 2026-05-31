@@ -1,0 +1,51 @@
+body, html {
+    margin: 0;
+    color: rgb(0, 0, 0);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    transition: 0.3s cubic-bezier(.4,.13,.48,.79) background-color;
+}
+
+body {
+    overflow: none;
+    min-height: 150vh;
+}
+
+body.darktheme {
+    background-color: #000000;
+    color: white;
+}
+
+.vcommс {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 8px 12px;
+    transition: 0.2s cubic-bezier(.4,.13,.48,.79) background-color, 0.2s cubic-bezier(.4,.13,.48,.79) color;
+    border-radius: 10px;
+    margin-top: 0px;
+    width: 810px;
+    margin-bottom: 8px;
+}
+
+body.darktheme .vcommс {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.psp {
+    margin: 0;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    color: rgba(0, 0, 0, 0.4);
+    transition: 0.2s cubic-bezier(.4,.13,.48,.79) background-color, 0.2s cubic-bezier(.4,.13,.48,.79) color;
+}
+
+body.darktheme .psp {
+    color: rgba(255, 255, 255, 0.4);
+}
