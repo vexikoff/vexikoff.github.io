@@ -39,7 +39,6 @@ body.darktheme {
 
 .header {
     font-family: SansBold, sans-serif;
-    background-color: #f2f2f2c0;
     margin: 0;
     top: 0;
     display: flex;
@@ -50,21 +49,9 @@ body.darktheme {
     flex-direction: row;
     transition: 0.2s cubic-bezier(.4,.13,.48,.79) all;
     overflow: hidden;
+    height: 64px;
+    z-index: 992;
 }
-
-.header::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0;
-    right: 0;
-    bottom: -100px;
-    z-index: -1;
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    pointer-events: none;
-}
-
 
 body {
     --sizehd: 24px;
@@ -114,7 +101,7 @@ body.darktheme .theme {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 90%;
+    height: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
