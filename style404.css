@@ -30,11 +30,21 @@ body, html {
 body {
     overflow: none;
     height: 100vh;
+    background-image: 
+        linear-gradient(to right, #0000000f 1px, transparent 1px),
+        linear-gradient(to bottom, #0000000f 1px, transparent 1px);
+    background-size: 12.5vw 12.5vw;
+    animation: freebg 20s ease-in-out infinite alternate;
 }
 
 body.darktheme {
     background-color: #000000;
     color: white;
+    background-image: 
+        linear-gradient(to right, #ffffff0f 1px, transparent 1px),
+        linear-gradient(to bottom, #ffffff0f 1px, transparent 1px);
+    background-size: 12.5vw 12.5vw;
+    animation: freebg 20s ease-in-out infinite alternate;
 }
 
 .header {
@@ -224,6 +234,7 @@ body.darktheme .goto {
     flex-wrap: wrap;
     margin-left: 32px;
     margin-right: 32px;
+    justify-content: center;
 }
 
 .vcomm span {
@@ -253,7 +264,8 @@ body.darktheme .vcomm span {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
+    margin-top: 5vh;
 }
 
 .t2 {
