@@ -58,8 +58,7 @@ body.darktheme {
     align-items: center;
     flex-direction: row;
     transition: 0.2s cubic-bezier(.4,.13,.48,.79) all;
-    overflow: hidden;
-    height: 64px;
+    height: 72px;
     z-index: 992;
 }
 

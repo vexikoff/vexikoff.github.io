@@ -35,3 +35,27 @@ if (detectDevice() === "mb") {
 } else {
   body.classList.remove('mb')
 }
+
+window.addEventListener('DOMContentLoaded', () => {
+    const audio = document.getElementById('music');
+    
+    if (audio) {
+        audio.volume = 0.1;
+
+        const startPlayback = () => {
+            audio.play().catch(() => {
+                const playOnInteraction = () => {
+                    audio.play();
+                    document.removeEventListener('click', playOnInteraction);
+                };
+                document.addEventListener('click', playOnInteraction);
+            });
+        };
+
+        setTimeout(startPlayback, 30000);
+
+        audio.addEventListener('ended', () => {
+            setTimeout(startPlayback, 30000);
+        });
+    }
+});
