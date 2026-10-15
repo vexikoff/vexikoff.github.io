@@ -1,5 +1,4 @@
 const body = document.body;
-const delmob = document.querySelector('.cc');
 
 if (localStorage.getItem('theme') === 'darktheme') {
     body.classList.add('darktheme');
@@ -30,10 +29,9 @@ function detectDevice() {
 }
 
 if (detectDevice() === "mb") {
-    body.classList.add('mb')
-    delmob.remove();
+    body.classList.add('mb');
 } else {
-    body.classList.remove('mb')
+    body.classList.remove('mb');
 }
 
 class ListScroller {
