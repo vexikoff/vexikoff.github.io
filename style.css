@@ -8,6 +8,7 @@ html, body {
 body.darktheme {
     color: white;
     background-color: black;
+    font-family: "Google Sans", sans-serif;
 }
 
 h1, h2, h3, p, a {
