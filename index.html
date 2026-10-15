@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VEXIKOFF - DEV</title>
-    <link rel="stylesheet" href="style404.css">
-    <link rel="stylesheet" href="stylefrms.css">
     <link rel="stylesheet" href="style.css">
     <meta name="description" content="Personal portfolio of vexikoff. Frontend Developer, UI/UX Designer, Music Producer, and 3D Modeler. Explore my code, designs, and projects.">
     <meta name="keywords" content="vexikoff, vexikoff github, frontend developer, ui/ux designer, music producer, 3d modeler, web development, blender, figma">
@@ -21,106 +19,99 @@
     <meta name="twitter:title" content="VEXIKOFF">
     <meta name="twitter:description" content="Frontend Developer, UI/UX Designer, Music Producer, and 3D Modeler. Check out my repositories and creative work.">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=BBH+Hegarty&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+
     <meta name="theme-color" content="#000000">
 </head>
 <body>
-    <audio id="music" src="music.mp3"></audio>
     <div class="header">
-        <h1 class="hdtxt" style="z-index: 992;">
-            VEXIKOFF
-        </h1>
+        <a href="/" class="hdtxt" style="z-index: 992;">
+            vexikoff
+        </a>
         <div class="themes" style="z-index: 992;">
-            <svg class="theme" onclick="tht()" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+            <svg class="theme" onclick="tht()" style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 32.5-156t88-127Q256-817 330-848.5T488-880q80 0 151 27.5t124.5 76q53.5 48.5 85 115T880-518q0 115-70 176.5T640-280h-74q-9 0-12.5 5t-3.5 11q0 12 15 34.5t15 51.5q0 50-27.5 74T480-80Zm0-400Zm-177 23q17-17 17-43t-17-43q-17-17-43-17t-43 17q-17 17-17 43t17 43q17 17 43 17t43-17Zm120-160q17-17 17-43t-17-43q-17-17-43-17t-43 17q-17 17-17 43t17 43q17 17 43 17t43-17Zm200 0q17-17 17-43t-17-43q-17-17-43-17t-43 17q-17 17-17 43t17 43q17 17 43 17t43-17Zm120 160q17-17 17-43t-17-43q-17-17-43-17t-43 17q-17 17-17 43t17 43q17 17 43 17t43-17ZM480-160q9 0 14.5-5t5.5-13q0-14-15-33t-15-57q0-42 29-67t71-25h70q66 0 113-38.5T800-518q0-121-92.5-201.5T488-800q-136 0-232 93t-96 227q0 133 93.5 226.5T480-160Z"/>
             </svg>
         </div>
-        <div class="blur">
-            <span class="header__blur-layer header__blur-layer--1"></span>
-            <span class="header__blur-layer header__blur-layer--2"></span>
-            <span class="header__blur-layer header__blur-layer--3"></span>
-            <span class="header__blur-layer header__blur-layer--4"></span>
-            <span class="header__blur-layer header__blur-layer--5"></span>
-        </div>
     </div>
-    <main class="main">
+    <div class="main">
         <div class="t1">
-            <h1 class="vxkss">VEXIKOFF</h1>
-            <div class="vcomm">
-                <span>Frontend Developer</span>
-                <div class="spacer"></div>
-                <span>UI/UX Designer</span>
-                <div class="spacer"></div>
-                <span>Music Producer</span>
-                <div class="spacer"></div>
-                <span>3D Modeler</span>
+            <div class="main2">
+                <span>
+                    <h1 class="the">The</h1>
+                    <div class="list">
+                        <div class="listmain" id="listmain">
+                            <h1>Frontend Developer</h1>
+                            <h1>UI/UX Designer</h1>
+                            <h1>Music Producer</h1>
+                            <h1>3D Modeler</h1>
+                        </div>
+                    </div>
+                </span>
+                <div class="split">
+                    <a class="see" href="https://github.com/vexikoff?tab=repositories/">See Portfolio</a>
+                    <a class="see seec" href="https://calcux.vexikoff.xyz/">Calcux</a>
+                </div>
             </div>
-            <button class="see" onclick="goto('https://github.com/vexikoff?tab=repositories')">
-                See repositories
-            </button>
         </div>
         <div class="t2">
-            <h1 class="vxkss">About Me</h1>
-            <p class="vcommс">
-                I exist somewhere between code and creativity.
-                I am not a specialist, but a creator who refuses to be just one thing.
-                I build for the web, design in Figma, produce music, and sculpt in 3D.<br>
-                <br>
-                Every expert was once someone who just started.
-            </p>
-            <img src="https://skillicons.dev/icons?i=html,css,java,figma,gcp,ae,ps,bash,blender,electron,git,github,md,npm,powershell,py,pytorch,tensorflow,unreal,vscode,windows" alt="">        
-        </div>
-        <div class="t3">
-            <h1 class="vxkss">Skills & Technologies</h1>
-            <p class="psp">
-                Development
-            </p>
-            <div class="vcomm">
-                <span>HTML5</span>
-                <div class="spacer"></div>
-                <span>CSS3</span>
-                <div class="spacer"></div>
-                <span>JavaScript</span>
-                <div class="spacer"></div>
-                <span>Python</span>
-                <div class="spacer"></div>
-                <span>npm</span>
-                <div class="spacer"></div>
-                <span>Git</span>
-                <div class="spacer"></div>
-                <span>GitHub</span>
-                <div class="spacer"></div>
-                <span>VS Code</span>
+            <div class="main3">
+                <div class="line" style="font-size: 12px;">
+                    <h1 class="the line">Currently</h1>
+                    <h1 style="color: rgb(125, 0, 250);margin-left: 8px;">C++</h1>
+                </div>
+                <div class="line" style="font-size: 12px;">
+                    <h1 class="the line">Always</h1>
+                    <h1 style="color: rgb(125, 0, 250);margin-left: 8px; margin-bottom: 12px;">сreating</h1>
+                </div>
+                <h1 class="the stack">Stack</h1>
+                <div class="stack">
+                    <iframe 
+                        class="stack"
+                        src="https://skillicons.dev/icons?i=html,css,java,figma,gcp,ae,ps,bash,blender,electron,git,github,md,npm,powershell,py,pytorch,tensorflow,unreal,vscode,windows,c" 
+                        width="512" 
+                        style="width: 512px; border: 0; display: block;height: 64px;margin-top: 12px;margin-bottom: 12px;"
+                    ></iframe>
+                </div>
+                <h1 class="the" style="margin-top: 24px;margin-bottom: 2px;">About</h1>
+                <div class="about">
+                    <p style="font-size: 20px;">
+                        I exist somewhere between code and creativity.<br>
+                        I produce music, design in Figma, build for the web, and sculpt in 3D.<br>
+                        Not a specialist — a creator who refuses to be just one thing.<br>
+                        Against vibecoding. Against AI. Against. AGAINST! for doing everything on your own. you didn't write it, the code isn't yours.<br>
+                    </p>
+                </div>
+                <div class="line" style="margin-top: 24px;">
+                    <h1 class="the line">About</h1>
+                    <h1 style="color: rgb(125, 0, 250);margin-left: 8px; margin-bottom: 2px;">AI</h1>
+                </div>
+                <div class="about">
+                    <p style="font-size: 20px;">
+                        You can't call code your own if you didn't write it. <br>
+                        It's fine if you took 7 lines of AI's 250 lines and fixed a bug you can't fix and can't find anyone to fix it, fine. <br>
+                        Writing 5+% of your code using AI is cringe. Using agents is cringe. <br>
+                        <br>
+                        final Better yet, delete the agent, cancel the subscription, and learn programming languages, don't kick the dick. <br>
+                        <br>
+                        Having worked extensively with AI, I can say that over the last five years, it won't replace humans. <br>
+                        It will only replace fortune tellers, at most. <br>
+                    </p>
+                </div>
             </div>
-            <div class="hspacer"></div>
-            <p class="psp">
-                Design & 3D
-            </p>
-            <div class="vcomm">
-                <span>Figma</span>
-                <div class="spacer"></div>
-                <span>Blender</span>
-                <div class="spacer"></div>
-                <span>Adobe Photoshop</span>
-                <div class="spacer"></div>
-                <span>Adobe After Effects</span>
-                <div class="spacer"></div>
-                <span>Unreal Engine</span>
-            </div>
-            <div class="hspacer"></div>
-            <p class="psp">
-                Interests
-            </p>
-            <div class="vcomm">
-                <span>Music Production</span>
-                <div class="spacer"></div>
-                <span>UI/UX Design</span>
-                <div class="spacer"></div>
-                <span>Web Development</span>
-                <div class="spacer"></div>
-                <span>3D Modeling</span>
+            <div class="list" style="margin-top: 32px;">
+                <div class="listmain" id="listmain2">
+                    <h1>Python</h1>
+                    <h1>C/C++</h1>
+                    <h1>HTML</h1>
+                    <h1>CSS</h1>
+                    <h1>JavaScript</h1>
+                </div>
             </div>
         </div>
-    </main>
+    </div>
     <footer class="foot">
         <div class="left">
             <h1 class="vxk">
@@ -139,8 +130,6 @@
             </svg>
         </div>
     </footer>
-    <div class="cc"></div>
-    <script src="scriptfrms.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

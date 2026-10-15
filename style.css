@@ -1,127 +1,310 @@
-body, html {
+html, body {
+    color: black;
+    font-family: "Google Sans", sans-serif;
     margin: 0;
-    color: rgb(0, 0, 0);
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    background-color: #f2f2f2;
-    transition: 0.3s cubic-bezier(.4,.13,.48,.79) background-color;
-}
-
-body {
-    overflow: none;
-    min-height: 150vh;
+    padding: 0;
 }
 
 body.darktheme {
-    background-color: #000000;
+    color: white;
+    background-color: black;
+}
+
+h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+
+body.darktheme h1, h2, h3, p, a {
     color: white;
 }
 
-.vcommс {
+.list {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding-left: 8px;
+    height: 44px;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 15%,
+        rgba(0, 0, 0, 1) 85%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    
+    mask-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 15%,
+        rgba(0, 0, 0, 1) 85%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+
+.listmain {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: 0.3s cubic-bezier(.04,.18,0,.98);
+}
+
+.listmain h1 {
+    color: rgb(125, 0, 250) !important;
+}
+
+span {
+    display: flex;
+}
+
+.main {
+    margin-top: -38px;
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+}
+
+.t1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.header {
+    font-family: "BBH Bartle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 8px;
     display: flex;
     flex-direction: row;
-    gap: 6px;
     align-items: center;
+    justify-content: center;
+    height: 38px;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+body.darktheme .header {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+body.darktheme .theme {
+    fill: white;
+}
+
+.main2 {
+    width: 512px;
+}
+
+.main3 {
+    width: 920px;
+}
+
+.split {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.see {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: black;
+    border: none;
     color: white;
-    padding: 8px 12px;
-    transition: 0.2s cubic-bezier(.4,.13,.48,.79) background-color, 0.2s cubic-bezier(.4,.13,.48,.79) color;
-    border-radius: 10px;
-    margin-top: 0px;
-    width: 810px;
-    margin-bottom: 8px;
+    border-radius: 4px;
+    width: auto;
+    height: 32px;
+    cursor: pointer;
+    font-family: "Google Sans", sans-serif;
+    margin-top: 8px;
+    flex: 3;
+    font-size: 16px;
+    transition: 0.3s cubic-bezier(.04,.18,0,.98);
 }
 
-body.darktheme .vcommс {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+.see:hover {
+    background-color: rgb(10, 10, 10);
 }
 
-.psp {
-    margin: 0;
-    margin-bottom: 6px;
-    margin-top: 6px;
-    color: rgba(0, 0, 0, 0.4);
-    transition: 0.2s cubic-bezier(.4,.13,.48,.79) background-color, 0.2s cubic-bezier(.4,.13,.48,.79) color;
+body.darktheme .see {
+    color: black;
+    background-color: white;
 }
 
-body.darktheme .psp {
-    color: rgba(255, 255, 255, 0.4);
+body.darktheme .see:hover {
+    background-color: rgb(245, 245, 245);
 }
 
-@media (max-width: 910px) {
-    .t2 img {
-        width: 92.5%;
-    }
-    .vcommс {
-        width: 90%;
-    }
+.seec {
+    flex: 1;
 }
 
-@media (max-width: 610px) {
-    .t2 img {
-        display: none;
-    }
-    .vcommс {
-        width: 80%;
-    }
-}
-
-.header__blur-layer--1 {
-    --blur: 4px;
-    mask-image: linear-gradient(to bottom, transparent 0%, transparent 40%, #000 60%, #000 80%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, transparent 40%, #000 60%, #000 80%, transparent 100%);
-}
-
-.header__blur-layer--2 {
-    --blur: 6px;
-    mask-image: linear-gradient(to bottom, transparent 0%, transparent 20%, #000 40%, #000 60%, transparent 80%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, transparent 20%, #000 40%, #000 60%, transparent 80%, transparent 100%);
-}
-
-.header__blur-layer--3 {
-    --blur: 10px;
-    mask-image: linear-gradient(to bottom, transparent 0%, #000 20%, #000 40%, transparent 60%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 20%, #000 40%, transparent 60%, transparent 100%);
-}
-
-.header__blur-layer--4 {
-    --blur: 18px;
-    mask-image: linear-gradient(to bottom, #000 0%, #000 20%, transparent 40%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 20%, transparent 40%, transparent 100%);
-}
-
-.header__blur-layer--5 {
-    --blur: 34px;
-    mask-image: linear-gradient(to bottom, #000 0%, transparent 20%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, #000 0%, transparent 20%, transparent 100%);
-}
-
-.header__blur-layer {
-    background: transparent;
-    backdrop-filter: blur(var(--blur));
-    -webkit-backdrop-filter: blur(var(--blur));
-    mask-repeat: no-repeat;
-    mask-size: 100% 100%;
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: 100% 100%;
+.header::before{
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
+    height: 64px;
+    backdrop-filter: blur(24px);
 }
 
-.blur {
+.hdtxt {
+    margin-left: auto;
+    margin-right: -8px;
+    cursor: pointer;
+    font-family: "BBH Bartle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+body.darktheme .hdtxt {
+    color: white;
+}
+
+.theme {
+    width: 21px;
+    height: 21px;
+}
+
+.themes{
+    margin-left: auto;
+    margin-right: 8px;
+}
+
+.t2 {
     display: flex;
-    position: absolute;
-    height: 64px;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: 99;
+    height: auto;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+}
+
+.about {
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: black;
+    border-radius: 4px;
+}
+
+body.darktheme .about {
+    background-color: white;
+}
+
+.about p {
+    color: white;
+}
+
+body.darktheme .about p {
+    color: black;
+}
+
+.foot {
+    display: flex;
+    gap: 12px;
+    flex-direction: row;
+    margin-top: auto;
+    padding: 8px;
+    padding-right: 12px;
+    background-color: black;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: auto;
+    font-family: "BBH Bartle", sans-serif;
+}
+
+.right {
+    display: flex;
+    margin-top: auto;
+    align-items: center;
+    width: 50%;
+    gap: 8px;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.icon {
+    fill: white;
+    width: 20px;
+    margin: 0;
+    cursor: pointer;
+    --pointer: 1;
+}
+
+.left {
+    display: flex;
+    margin-top: auto;
+    align-items: center;
+    width: 50%;
+    gap: 8px;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.vxk {
+    color: white;
+    font-family: Sans, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    cursor: default;
+    font-family: "Google Sans", sans-serif;
+}
+
+html::-webkit-scrollbar {
+    width: 6px;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #e0e0e0;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+@media (max-width: 1080px) {
+    .main2 {
+        width: 100%;
+    }
+
+    .main3 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 720px) {
+    .stack {
+        display: none;
+    }
 }
