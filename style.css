@@ -5,10 +5,59 @@ html, body {
     padding: 0;
 }
 
+.bg {
+    position: absolute;
+    z-index: -5;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
+    background-color: #ffffff;
+    transition: all 0.3s cubic-bezier(.04,.18,0,.98);
+}
+
+body.darktheme .bg {
+    background-color: #000000;
+}
+
+.bg canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s cubic-bezier(.04,.18,0,.98);
+}
+
+.bg2 {
+    position: absolute;
+    z-index: -5;
+    top: 100vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
+    background-color: #ffffff;
+    transition: all 0.3s cubic-bezier(.04,.18,0,.98);
+}
+
+body.darktheme .bg2 {
+    background-color: #000000;
+}
+
+.bg2 canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s cubic-bezier(.04,.18,0,.98);
+}
+
 body.darktheme {
     color: white;
     background-color: black;
-    font-family: "Google Sans", sans-serif;
 }
 
 h1, h2, h3, p, a {
@@ -50,7 +99,7 @@ body.darktheme h1, h2, h3, p, a {
     display: flex;
     flex-direction: column;
     position: relative;
-    transition: 0.3s cubic-bezier(.04,.18,0,.98);
+    transition: all 0.3s cubic-bezier(.04,.18,0,.98);
 }
 
 .listmain h1 {
@@ -70,6 +119,7 @@ span {
     padding-left: 16px;
     padding-right: 16px;
     box-sizing: border-box;
+    gap: 32px;
 }
 
 .t1 {
@@ -138,6 +188,7 @@ body.darktheme .theme {
     flex: 3;
     font-size: 16px;
     transition: 0.3s cubic-bezier(.04,.18,0,.98);
+    overflow: hidden;
 }
 
 .see:hover {
@@ -155,6 +206,29 @@ body.darktheme .see:hover {
 
 .seec {
     flex: 1;
+}
+
+.see {
+    position: relative;
+    isolation: isolate;
+}
+
+.bgg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.bgg canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .header::before{
