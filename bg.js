@@ -25093,7 +25093,7 @@ void main() {
     return /* @__PURE__ */ import_react3.default.createElement("div", { style: { width: "100%", height: "100%", position: "absolute" } }, /* @__PURE__ */ import_react3.default.createElement(
       Antigravity_default,
       {
-        style: { position: "absolute", top: "0" },
+        style: { position: "absolute", top: "0", left: "0", right: "0", bottom: "0" },
         colors: ["#5e39ff", "#9941ff", "#6029eb"],
         count: 500,
         magnetRadius: 11.5,
@@ -25116,12 +25116,12 @@ void main() {
         interactive: true,
         clickBurst: false,
         intro: true,
-        lightMode: false
+        lightMode
       }
     ), /* @__PURE__ */ import_react3.default.createElement(
       GradientASCII_default,
       {
-        style: { position: "absolute", top: "0" },
+        style: { position: "absolute", top: "0", left: "0", right: "0", bottom: "0" },
         colors: ["#5c1ed8", "#f6f8ff", "#a5bfff", "#4a5fe8"],
         shape: "rise",
         characters: " =+xX0S8#@",
