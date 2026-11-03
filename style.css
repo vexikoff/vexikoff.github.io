@@ -67,7 +67,7 @@ h1, h2, h3, p, a {
     color: black;
 }
 
-body.darktheme h1, h2, h3, p, a {
+body.darktheme h1, body.darktheme h2, body.darktheme h3, body.darktheme p, body.darktheme a {
     color: white;
 }
 
@@ -102,12 +102,16 @@ body.darktheme h1, h2, h3, p, a {
     transition: all 0.3s cubic-bezier(.04,.18,0,.98);
 }
 
-.listmain h1 {
+.listmain p {
+    font-size: 32px;
+    font-weight: 700;
     color: rgb(125, 0, 250) !important;
 }
 
 span {
     display: flex;
+    font-size: 32px;
+    font-weight: 700;
 }
 
 .main {
@@ -354,6 +358,11 @@ body.darktheme .about p {
 
 html::-webkit-scrollbar {
     width: 6px;
+}
+
+.h1 {
+    font-size: 32px;
+    font-weight: 700;
 }
 
 html::-webkit-scrollbar-track {
