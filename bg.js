@@ -25090,34 +25090,10 @@ void main() {
       observer.observe(document.body, { attributes: true, attributeFilter: ["class"] });
       return () => observer.disconnect();
     }, []);
-    return /* @__PURE__ */ import_react3.default.createElement("div", { style: { width: "100%", height: "600px", position: "relative" } }, /* @__PURE__ */ import_react3.default.createElement(
-      GradientASCII_default,
-      {
-        colors: ["#5c1ed8", "#f6f8ff", "#a5bfff", "#4a5fe8"],
-        shape: "rise",
-        characters: " =+xX0S8#@",
-        cellSize: 18,
-        density: 0.8,
-        glyphOpacity: 0.85,
-        glow: 0.75,
-        depthOfField: 0.65,
-        flicker: 0.38,
-        softness: 0.4,
-        scale: 1.5,
-        flow: 1.6,
-        speed: 0.35,
-        gradientOpacity: 0.9,
-        grain: 0.08,
-        variation: 5,
-        mouseInteraction: true,
-        scrambleRadius: 0.1,
-        clickEffect: "burst",
-        intro: true,
-        lightMode
-      }
-    ), /* @__PURE__ */ import_react3.default.createElement(
+    return /* @__PURE__ */ import_react3.default.createElement("div", { style: { width: "100%", height: "100%", position: "absolute" } }, /* @__PURE__ */ import_react3.default.createElement(
       Antigravity_default,
       {
+        style: { position: "absolute", top: "0" },
         colors: ["#5e39ff", "#9941ff", "#6029eb"],
         count: 500,
         magnetRadius: 11.5,
@@ -25141,6 +25117,32 @@ void main() {
         clickBurst: false,
         intro: true,
         lightMode: false
+      }
+    ), /* @__PURE__ */ import_react3.default.createElement(
+      GradientASCII_default,
+      {
+        style: { position: "absolute", top: "0" },
+        colors: ["#5c1ed8", "#f6f8ff", "#a5bfff", "#4a5fe8"],
+        shape: "rise",
+        characters: " =+xX0S8#@",
+        cellSize: 18,
+        density: 0.8,
+        glyphOpacity: 0.85,
+        glow: 0.75,
+        depthOfField: 0.65,
+        flicker: 0.38,
+        softness: 0.4,
+        scale: 1.5,
+        flow: 1.6,
+        speed: 0.35,
+        gradientOpacity: 0.9,
+        grain: 0.08,
+        variation: 5,
+        mouseInteraction: true,
+        scrambleRadius: 0.1,
+        clickEffect: "burst",
+        intro: true,
+        lightMode
       }
     ));
   }
