@@ -24396,7 +24396,7 @@ void main() {
       observer.observe(document.body, { attributes: true, attributeFilter: ["class"] });
       return () => observer.disconnect();
     }, []);
-    return /* @__PURE__ */ import_react2.default.createElement("div", { style: { width: "100%", height: "600px", position: "relative" } }, /* @__PURE__ */ import_react2.default.createElement(
+    return /* @__PURE__ */ import_react2.default.createElement("div", { style: { width: "100%", height: "400px", position: "relative" } }, /* @__PURE__ */ import_react2.default.createElement(
       GradientASCII_default,
       {
         colors: ["#5c1ed8", "#f6f8ff", "#a5bfff", "#4a5fe8"],
