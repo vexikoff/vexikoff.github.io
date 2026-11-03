@@ -24396,25 +24396,25 @@ void main() {
       observer.observe(document.body, { attributes: true, attributeFilter: ["class"] });
       return () => observer.disconnect();
     }, []);
-    return /* @__PURE__ */ import_react2.default.createElement("div", { style: { width: "100%", height: "400px", position: "relative" } }, /* @__PURE__ */ import_react2.default.createElement(
+    return /* @__PURE__ */ import_react2.default.createElement("div", { style: { width: "100%", height: "600px", position: "relative" } }, /* @__PURE__ */ import_react2.default.createElement(
       GradientASCII_default,
       {
         colors: ["#5c1ed8", "#f6f8ff", "#a5bfff", "#4a5fe8"],
-        shape: "horizon",
+        shape: "rise",
         characters: " =+xX0S8#@",
         cellSize: 18,
         density: 0.8,
         glyphOpacity: 0.85,
         glow: 0.75,
-        depthOfField: 0,
+        depthOfField: 0.65,
         flicker: 0.38,
         softness: 0.4,
         scale: 1.5,
         flow: 1.6,
-        speed: 0.45,
+        speed: 0.35,
         gradientOpacity: 0.9,
         grain: 0.08,
-        variation: 0,
+        variation: 5,
         mouseInteraction: true,
         scrambleRadius: 0.1,
         clickEffect: "burst",
