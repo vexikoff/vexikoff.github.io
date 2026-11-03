@@ -24399,7 +24399,7 @@ void main() {
     return /* @__PURE__ */ import_react2.default.createElement("div", { style: { width: "100%", height: "600px", position: "relative" } }, /* @__PURE__ */ import_react2.default.createElement(
       GradientASCII_default,
       {
-        colors: ["#1e3fd8", "#f6f8ff", "#a5d8ff", "#38bdf8"],
+        colors: ["#5c1ed8", "#f6f8ff", "#a5bfff", "#4a5fe8"],
         shape: "horizon",
         characters: " =+xX0S8#@",
         cellSize: 18,
